@@ -8,15 +8,15 @@
 
 import Foundation
 
+let t = TransformCollection()
+
 let xPlus23 = ExpressionNode.operator2(.add, .variable("x"), .operator2(.add, .constant(5.0), .constant(2.0)))
 
-let pathToConstantAdd = TreePath.right(.left(.right(.end)))
-
-
+let pathToConstantAdd = TreePath.right(.end)
 
 if case let .operator2(_, _, rhs) = xPlus23 {
 	do {
-		let seven = try collectConstants(e: subTree(xPlus23, at: pathToConstantAdd))
+		let seven = try t["add-constants"](subTree(xPlus23, at: pathToConstantAdd))
 		print(seven)
 	} catch TreePathError.expressionTerminated(let p) {
 		print("Path '\(p)' is too deep for this tree.")

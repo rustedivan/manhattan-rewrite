@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147938FE1E24CB010025FBFC /* TransformCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147938FD1E24CB010025FBFC /* TransformCollection.swift */; };
 		14FD5B7A1E20610C00304516 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD5B791E20610C00304516 /* main.swift */; };
 		14FD5B811E20613000304516 /* ExpressionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD5B801E20613000304516 /* ExpressionTree.swift */; };
 		14FD5B831E2064FC00304516 /* ExpressionTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD5B821E2064FC00304516 /* ExpressionTransform.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		147938FD1E24CB010025FBFC /* TransformCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformCollection.swift; sourceTree = "<group>"; };
 		14FD5B761E20610C00304516 /* manhattan-rewrite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "manhattan-rewrite"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FD5B791E20610C00304516 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		14FD5B801E20613000304516 /* ExpressionTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionTree.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				14FD5B801E20613000304516 /* ExpressionTree.swift */,
 				14FD5B841E207BAF00304516 /* TreePath.swift */,
 				14FD5B821E2064FC00304516 /* ExpressionTransform.swift */,
+				147938FD1E24CB010025FBFC /* TransformCollection.swift */,
 			);
 			path = "manhattan-rewrite";
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14FD5B831E2064FC00304516 /* ExpressionTransform.swift in Sources */,
+				147938FE1E24CB010025FBFC /* TransformCollection.swift in Sources */,
 				14FD5B7A1E20610C00304516 /* main.swift in Sources */,
 				14FD5B851E207BAF00304516 /* TreePath.swift in Sources */,
 				14FD5B811E20613000304516 /* ExpressionTree.swift in Sources */,
@@ -265,6 +269,7 @@
 				14FD5B7F1E20610C00304516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
