@@ -59,12 +59,12 @@ indirect enum ExpressionNode: CustomDebugStringConvertible {
 }
 
 extension ExpressionNode {
-	func matches(t: TransformNode) -> Bool {
+	func matches(_ t: TransformNode) -> Bool {
 		switch (self, t) {
 		case (.operator2(let eOp, let eL, let eR), .operator2(let tOp, let tL, let tR)):
 			return (tOp == eOp &&
-							eL.matches(t: tL) &&
-							eR.matches(t: tR))
+							eL.matches(tL) &&
+							eR.matches(tR))
 		case (.variable, .variable):
 			return true
 		case (.constant, .constant):
