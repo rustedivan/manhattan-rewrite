@@ -15,9 +15,7 @@ struct TransformCollection {
 		if let t = transformMap[name] {
 			return t
 		} else {
-			print("Transform \(name) not implemented.")
-			raise(SIGKILL)
-			return { e in return e }
+			fatalError("Transform \(name) not implemented.")
 		}
 	}
 }
